@@ -5,7 +5,7 @@
   "context": "..",
   "dockerFile": "../Dockerfile",
   "workspaceFolder": "/go/src/app",
-  "forwardPorts": [3000],
+  "forwardPorts": [5173],
   "workspaceMount": "source=${localWorkspaceFolder},target=/go/src/app,type=bind",
   "customizations": {
     "vscode": {
@@ -35,7 +35,8 @@
         "Orta.vscode-jest",
         "esbenp.prettier-vscode",
         "rvest.vs-code-prettier-eslint",
-        "Vue.volar"
+        "Vue.volar",
+        "Vue.vscode-typescript-vue-plugin"
       ]
     }
   }

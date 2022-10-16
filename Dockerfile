@@ -36,4 +36,6 @@ WORKDIR ${ROOT}
 COPY ./ ./
 RUN go mod download && npm install -g npm && npm install
 
-CMD [ "/bin/zsh" ]
+EXPOSE 5173
+
+CMD [ "npm", "run", "dev" ]
