@@ -1,0 +1,42 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/docker-existing-dockerfile
+{
+  "name": "Go Template Checker Dev",
+  "context": "..",
+  "dockerFile": "../Dockerfile",
+  "workspaceFolder": "/go/src/app",
+  "forwardPorts": [3000],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/go/src/app,type=bind",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "EditorConfig.EditorConfig",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "golang.go",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "VisualStudioExptTeam.intellicode-api-usage-examples",
+        "VisualStudioExptTeam.vscodeintellicode-completions",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "yzhang.markdown-all-in-one",
+        "shd101wyy.markdown-preview-enhanced",
+        "DavidAnson.vscode-markdownlint",
+        "christian-kohler.path-intellisense",
+        "redhat.vscode-yaml",
+        "mosapride.zenkaku",
+        "Gruntfuggly.todo-tree",
+        "formulahendry.code-runner",
+        "streetsidesoftware.code-spell-checker",
+        "stevencl.addDocComments",
+        "formulahendry.auto-complete-tag",
+        "steoates.autoimport",
+        "ms-azuretools.vscode-docker",
+        "dbaeumer.vscode-eslint",
+        "Orta.vscode-jest",
+        "esbenp.prettier-vscode",
+        "rvest.vs-code-prettier-eslint",
+        "Vue.volar"
+      ]
+    }
+  }
+}
